@@ -1,4 +1,5 @@
 var myN = 0;
+var text = document.querySelector("#text");
 function loginButton(){
     var btn = document.querySelector("#main-btn");
     var box = document.querySelector("#box");
@@ -10,6 +11,7 @@ function loginButton(){
             box.style.transform = "scale(0)"
             myN = 0;
         }
+        text.innerHTML="Miskat: 'Now again click the new login button.'"
     })
 }
 function loginPopUpBoxShow(){
@@ -25,6 +27,7 @@ function loginPopUpBoxShow(){
         box.style.display = "none";
         thank_box_row.style.top = "50%";
         thank_box_row.style.transform = "translate(-50%, -50%) scale(1)"
+        text.innerHTML = "Miskat: 'Thanks, click ok button.'"
     });
     close_box_btn.addEventListener("click", ()=>{
         thank_box_row.style.top = "-22%";
@@ -34,6 +37,7 @@ function loginPopUpBoxShow(){
         box.style.transform = "scale(0)"
         nav.style.display = "flex";
         myN = 0;
+        text.innerHTML = "Miskat: 'Please click the login button.'"
     })
 }
 loginButton();
