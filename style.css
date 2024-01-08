@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background: url("https://mahbubsiam30.github.io/login-form/bg6.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.section1-change-bg{
+    background: url("https://wallpapers.com/images/hd/nature-landscape-hd-usqznq19dscdjkf8.webp");
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 30px 7vw;
+}
+nav .nav-brand{
+    color: #fff;
+    font-size: 24px;
+}
+nav .navbar-content{
+    margin-left: auto;
+    display: flex;
+    column-gap: 4em;
+}
+nav .navbar-content .nav-link{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+nav .navbar-content .btn{
+    border: 1px solid #fff;
+    padding: 14px 30px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+    transition: all ease 0.4s;
+}
+nav .navbar-content .btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box{
+    border: 2px solid #f3aea4;
+    border-radius: 11px;
+    backdrop-filter: blur(20px);
+    color: #fcf7f6;
+    transform: scale(0);
+    transition: all ease 0.5s;
+}
+/* .box-showing{
+
+} */
+#box .login-box{
+    padding: 40px;
+    text-align: center;
+    width: 400px;
+}
+#box form .email input,
+#box form .password input{
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-top: 20px;
+    border-bottom: 2px solid #f3aea4;
+    color: #fcf7f6 !important;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 20px 0;
+}
+.remember-forgot a{
+    color: #fcf7f6;
+}
+.form-btn{
+    background-color: #693f47;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 5px;
+    color: #fcf7f6;
+}
+.form-btn:hover{
+    background-color: #5c353d;
+}
+.register{
+    font-size: 14px;
+    padding-top: 24px;
+}
+.register a{
+    color: #fcf7f6;
+}
+.register a:hover,
+.remember-forgot a:hover{
+    color: #fadcd7;
+}
+#section-1 .thank-box-row{
+    position: absolute;
+    top: -22%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all ease 0.5s;
+}
+#section-1 .thank-box-row .col{
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    padding: 80px 40px 40px;
+    text-align: center;
+}
+#section-1 .thank-box-row .col img{
+    width: 180px;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#section-1 .thank-box-row .col h1{
+    color: #292828;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+#section-1 .thank-box-row .col p{
+    font-size: 14px;
+}
+#section-1 .thank-box-row .col .btn{
+    background-color: #62df23;
+    display: block;
+    margin-top: 35px;
+    padding: 8px 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px 0 #b6b6b6;
+    color: #292828;
+    font-weight: 600;
+    font-size: 17px;
+}
+#section-1 .thank-box-row .col .btn:hover{
+    background-color: #57d11b;
+}
