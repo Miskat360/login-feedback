@@ -151,7 +151,10 @@ nav .navbar-content .btn:hover{
 #box form .input-box i{
     color: #331318;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 20px;
+}
+#box form .password i{
+    cursor: pointer;
 }
 .remember-forgot{
     display: flex;
@@ -241,4 +244,5 @@ nav .navbar-content .btn:hover{
     font-size: 15px;
     color: #491f26;
     font-weight: 600;
+    text-align: left;
 }

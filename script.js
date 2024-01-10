@@ -1,4 +1,3 @@
-// var myN = 0;
 var text = document.querySelector("#text");
 var box = document.querySelector("#box");
 function loginButton(){
@@ -45,7 +44,6 @@ function boxMoveing(){
     var register_box = document.querySelector(".register-box");
     var register_text_btn = document.querySelector("#register-text-btn");
     var login_text_btn = document.querySelector("#login-text-btn");
-    // console.log(login_text_btn)
     register_text_btn.addEventListener("click", ()=>{
         register_box.style.transform = "translateX(0px)";
         login_box.style.transform = "translateX(-400px)";
@@ -59,6 +57,48 @@ function boxMoveing(){
         text.innerHTML = "Miskat: 'Now click on the Register link.'"
     })
 };
+// function eyeOnOffDemo(){
+//     var password_inputs = document.querySelectorAll(".password-input");
+//     var password_icons = document.querySelectorAll(".password-icon img");
+//     Array.from(password_icons).map((icon)=>{
+//         icon.addEventListener("click", ()=>{
+//             Array.from(password_inputs).map((input) =>{
+//                 if(input.type == "password"){
+//                     input.type = "text";
+//                     icon.src = "images/eye-fill.png";
+//                 }else{
+//                     input.type = "password";
+//                     icon.src = "images/eye-off-fill.png";
+//                 }
+//             })
+//         });
+//     })
+// }
+function eyeOnOff(){
+    var eye_icon_login = document.querySelector("#login-password-icon i");
+    var input_password_login = document.querySelector("#login-password-input");
+    eye_icon_login.addEventListener("click", ()=>{
+        if(input_password_login.type == "password"){
+            input_password_login.type = "text";
+            eye_icon_login.classList = "ri-eye-fill"
+        }else{
+            input_password_login.type = "password";
+            eye_icon_login.classList = "ri-eye-off-fill"
+        }
+    })
+    var eye_icon_register = document.querySelector("#register-password-icon i");
+    var input_password_register = document.querySelector("#register-password-input");
+    eye_icon_register.addEventListener("click", ()=>{
+        if(input_password_register.type == "password"){
+            input_password_register.type = "text";
+            eye_icon_register.classList = "ri-eye-fill"
+        }else{
+            input_password_register.type = "password";
+            eye_icon_register.classList = "ri-eye-off-fill"
+        }
+    })
+}
 loginButton();
 loginPopUpBoxShow();
 boxMoveing();
+eyeOnOff();
