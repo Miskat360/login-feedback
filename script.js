@@ -36,7 +36,7 @@ function loginPopUpBoxShow(){
         box.style.display = "flex";
         box.style.transform = "scale(0)"
         nav.style.display = "flex";
-        text.innerHTML = "Miskat: 'Please click on the login button.'"
+        text.innerHTML = "Miskat: 'Please click on the login button. And you can also cleck password show & hide process.'"
     })
 }
 function boxMoveing(){
