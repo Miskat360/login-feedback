@@ -120,7 +120,8 @@ nav .navbar-content .btn:hover{
     position: relative;
     padding-top: 20px;
 }
-#box form .password{
+#box form .password,
+#box form .email{
     margin-top: 20px;
 }
 #box form .input-box label{
