@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
     <div id="section-1" class="section-1">
@@ -35,24 +37,21 @@
         </div>
         <div class="container">
             <div id="box">
-                <span class="close-icon">
-                    <div class="crose">
-                        <div class="crose1"></div>
-                        <div class="crose2"></div>
-                    </div>
-                </span>
+                <a href="#" class="close-icon" id="close-icon">
+                    <i class="ri-close-line"></i>
+                </a>
                 <div class="login-box">
                     <h1>Login</h1>
                     <form action="">
-                        <div class="email">
-                            <span></span>
+                        <div class="email input-box">
                             <input type="email" required>
-                            <label for="email"></label>
+                            <label for="email">Email</label>
+                            <span><i class="ri-mail-fill"></i></span>
                         </div>
-                        <div class="password">
-                            <span></span>
+                        <div class="password input-box">
                             <input type="password" required>
                             <label for="password">Password</label>
+                            <span><i class="ri-lock-fill"></i></span>
                         </div>
                         <div class="remember-forgot">
                             <div class="remember-me">
@@ -66,7 +65,35 @@
                             </div>
                         </div>
                         <a href="#" class="form-btn" type="submit" id="submit-btn">Login</a>
-                        <p class="register">Don't have an account? <a href="#">Register</a></p>
+                        <p class="register">Don't have an account? <a href="#" id="register-text-btn">Register</a></p>
+                    </form>
+                </div>
+                <div class="register-box">
+                    <h1>Register</h1>
+                    <form action="">
+                        <div class="username input-box">
+                            <input type="text" required>
+                            <label for="text">Username</label>
+                            <span><i class="ri-user-line"></i></span>
+                        </div>
+                        <div class="email input-box">
+                            <input type="email" required>
+                            <label for="email">Email</label>
+                            <span><i class="ri-mail-fill"></i></span>
+                        </div>
+                        <div class="password input-box">
+                            <input type="password" required>
+                            <label for="password">Password</label>
+                            <span><i class="ri-lock-fill"></i></span>
+                        </div>
+                        <div class="terms-condition">
+                            <label for="terms-condition">
+                                <input type="checkbox" name="terms-condition" id="">
+                                    I agree to the terms & condition.
+                            </label>
+                        </div>
+                        <a href="#" class="form-btn" type="submit" id="submit-btn">Register</a>
+                        <p class="register">Already have an account? <a href="#" id="login-text-btn">Login</a></p>
                     </form>
                 </div>
             </div>
