@@ -108,7 +108,7 @@ loggle_btn.addEventListener("click", ()=>{
     if(myN == 0){
         navbar_content.style.top = "110px"
         text.innerHTML = "Miskat: 'Then click on the login button.'"
-        text.style.top = "44%"
+        text.style.top = "50%"
         myN = 1;
     }else{
         navbar_content.style.top = "-50%";
