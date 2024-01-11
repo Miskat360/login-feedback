@@ -12,7 +12,8 @@
     padding-left: 40px;
     font-size: 21px;
     position: fixed;
-    width: 440px;
+    max-width: 440px;
+    /* top: auto; */
 }
 .section-1{
     width: 100%;
@@ -211,9 +212,9 @@ nav .navbar-content .btn:hover{
     text-align: center;
 }
 #section-1 .thank-box-row .col img{
-    width: 180px;
+    width: 170px;
     position: absolute;
-    top: -25%;
+    top: -22%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -245,4 +246,47 @@ nav .navbar-content .btn:hover{
     color: #491f26;
     font-weight: 600;
     text-align: left;
+}
+@media (max-width:576px) {
+    nav{
+        background-color: #292828;
+    }
+    nav .navbar-content{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+        padding: 30px 30px 30px 0;
+        display: inline-block;
+        text-align: end;
+        position: absolute;
+        right: 0;
+        top: -50%;
+    }
+    nav .navbar-content .nav-item{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav .navbar-content .nav-item:last-child{
+        margin-top: 20px !important;
+    }
+    .toggle-btn{
+        width: 50px;
+        height: 50px;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-row-gap: 12px;
+    }
+    .toggle-btn div{
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+    }
+    #box{
+        margin-top: 160px;
+    }
+    #section-1 .thank-box-row .col{
+        width: 350px;
+    }
 }

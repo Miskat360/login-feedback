@@ -1,12 +1,15 @@
 var text = document.querySelector("#text");
 var box = document.querySelector("#box");
+var login_btn = document.querySelector("#main-btn");
 function loginButton(){
-    var login_btn = document.querySelector("#main-btn");
     var close_btn = document.querySelector("#close-icon");
     var box = document.querySelector("#box");
     login_btn.addEventListener("click", () => {
         box.style.transform = "scale(1)"
-        text.innerHTML="Miskat: 'Now click on the Register link.'"
+        text.innerHTML="Miskat: 'Now click on the Register link.'";
+        navbar_content.style.top = "-50%";
+        myN = 0;
+        text.style.top = "auto"
     });
     close_btn.addEventListener("click", ()=>{
         box.style.transform = "scale(0)"
@@ -98,6 +101,22 @@ function eyeOnOff(){
         }
     })
 }
+var navbar_content = document.querySelector(".navbar-content");
+var loggle_btn = document.querySelector(".toggle-btn");
+var myN = 0;
+loggle_btn.addEventListener("click", ()=>{
+    if(myN == 0){
+        navbar_content.style.top = "110px"
+        text.innerHTML = "Miskat: 'Then click on the login button.'"
+        text.style.top = "44%"
+        myN = 1;
+    }else{
+        navbar_content.style.top = "-50%";
+        text.innerHTML = "Miskat: 'Please click on the menu button.'"
+        text.style.top = "auto"
+        myN = 0;
+    }
+});
 loginButton();
 loginPopUpBoxShow();
 boxMoveing();
