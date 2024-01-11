@@ -13,7 +13,7 @@
     font-size: 21px;
     position: fixed;
     max-width: 440px;
-    /* top: auto; */
+    mix-blend-mode: difference;
 }
 .section-1{
     width: 100%;
